@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lab_clinicas_core/lab_clinicas_core.dart';
 import 'package:lab_clinicas_panel/src/pages/panel/widgets/panel_principal_widget.dart';
+import 'package:lab_clinicas_panel/src/pages/panel/widgets/password_tile_widget.dart';
 
 class PanelPage extends StatelessWidget {
   const PanelPage({super.key});
@@ -38,6 +39,39 @@ class PanelPage extends StatelessWidget {
                     buttomColor: LabClinicasTheme.orangeColor,
                   ),
                 ),
+              ],
+            ),
+            SizedBox(height: 40),
+            Divider(color: LabClinicasTheme.orangeColor),
+            SizedBox(height: 30),
+            Text(
+              'Últimos Chamados',
+              style: LabClinicasTheme.titleStyle.copyWith(
+                color: LabClinicasTheme.orangeColor,
+                fontSize: 22,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(height: 16),
+            Wrap(
+              runAlignment: WrapAlignment.center,
+              spacing: 10,
+              runSpacing: 10,
+              children: [
+                PasswordTileWidget(),
+                PasswordTileWidget(),
+                PasswordTileWidget(),
+                PasswordTileWidget(),
+                PasswordTileWidget(),
+                PasswordTileWidget(),
+                PasswordTileWidget(),
+                PasswordTileWidget(),
+                PasswordTileWidget(),
+                PasswordTileWidget(),
+                PasswordTileWidget(),
+                PasswordTileWidget(),
+                PasswordTileWidget(),
+                PasswordTileWidget(),
               ],
             ),
           ],
